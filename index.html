@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Caleb Johnson - Resume</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script> (function() {
+            emailjs.init("6BVDmB_9Z1fSwBwks");
+        })();
+        </script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+
+        <div id="progressContainer">
+            <div id="progressBar"></div>
+        </div>
+
+        <!-- Header -->
+        <header>
+            <h1>Caleb Johnson</h1>
+            <p id="jobTitle"></p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button id="themeToggle">Dark Mode</button>
+        </header>
+
+        <!-- About Me -->
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>Detail-oriented Full-Stack Developer with proven experience designing and developing responsive, accessible, and high-performance web applications using React, JavaScript, and Firebase. Skilled in building scalable solutions with real-time functionality and seamless user experiences.</p>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> JavaScript, HTML5, CSS3, Python</li>
+                <li><strong>Frameworks:</strong> React, Redux Toolkit, React Query, Flask</li>
+                <li><strong>Database:</strong> Firestore, PostgreSQL, SQL</li>
+                <li><strong>Tools:</strong> Firebase, GitHub, Node.js, REST APIs, Insomnia, JSON</li>
+                <li><strong>Certifications:</strong> Coding Temple - Full Stack Development</li>
+            </ul>
+        </section>
+
+        <!-- Experience-->
+        <section class="experience" id="experience">
+            <h2>Experience</h2>
+
+            <div class="row">
+                <div class="column">
+                    <div class="job">
+                        <h3>Software Engineer Apprentice - Coding Temple | Remote</h3>
+                        <p><em>03/2024 - 09/2024</em></p>
+                        <p>Developed responsive full-stack apps using React, TypeScript, Firebase, and Flask. Built APIs with PostgreSQL and React Query, practiced TDD, and improved accessibility.</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="job">
+                        <h3>Coil Builder - RAE Coporation | Pryor, OK</h3>
+                        <p><em>02/ 2024 - Present</em></p>
+                        <p>Assembled HVAC components with precision, reduced production defects by 15%, and streamlined workflows.</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="job">
+                        <h3>Crew Member - Braum's | Pryor, OK</h3>
+                        <p><em>02/2023 - 07/2023</em></p>
+                        <p>Delivered customer service, ensured food safety standards, and improved shift efficiency during peak hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="education" id="education">
+            <h2>Education</h2>
+            <p><strong>Coding Temple</strong> - Certification in Software Engineering</p>
+            <p><strong>Rice Universtiy</strong> - B.A. Political Science and History</p>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" name="user_name" placeholder="Your Name" required>
+                <input type="email" name="user_email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p>Give me a call: (918) - 864 - 2661</p>
+            <p>Check out my <a href="https://github.com/caljohns611">GitHub</a></p>
+            <p id="formStatus"></p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Caleb Johnson</p>
+        </footer>
+
+        <button id="scrollTopBtn" title="Go to top">⬆️</button>
+
+    </body>
+</html>
