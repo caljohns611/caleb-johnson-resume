@@ -65,6 +65,16 @@ const sectionObserver = new IntersectionObserver((entries, observer) => {
                     });
                 }
 
+                // Projects section, stagger project cards
+                if (entry.target.id === "projects") {
+                    const projects = entry.target.querySelectorAll(".project-card");
+                    projects.forEach((project, i) => {
+                        setTimeout(() => {
+                            project.classList.add("show");
+                        }, 500 + i * 400);
+                    });
+                }
+
             }, baseDelay);
 
             observer.unobserve(entry.target); // Only animate once
