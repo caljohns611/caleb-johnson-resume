@@ -128,16 +128,6 @@ button[type="sumbit"]:hover {
     animation: shake 0.5s;
 }
 
-/* Shake Animation */
-@keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-5px); }
-    100% { transform: translateX(0); }
-}
-
-
 
 
 .job {
@@ -388,7 +378,6 @@ body.dark .project-card {
     80% { transform: translate(5px); }
     100% { transform: translate(0); }
 }
-
 
 
 @media screen and (max-width: 600px) {
